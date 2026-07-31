@@ -14,3 +14,9 @@ spring:
 app:
   service-name: Catalog Service
   message: Payment configuration loaded from GitHub
+
+  
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${server.port}:${random.value}
